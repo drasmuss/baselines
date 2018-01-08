@@ -86,7 +86,6 @@ class PrioritizedReplayBuffer(ReplayBuffer):
         ReplayBuffer.__init__
         """
         super(PrioritizedReplayBuffer, self).__init__(size)
-        assert alpha > 0
         self._alpha = alpha
 
         it_capacity = 1
@@ -149,7 +148,6 @@ class PrioritizedReplayBuffer(ReplayBuffer):
             Array of shape (batch_size,) and dtype np.int32
             idexes in buffer of sampled experiences
         """
-        assert beta > 0
 
         idxes = self._sample_proportional(batch_size)
 
