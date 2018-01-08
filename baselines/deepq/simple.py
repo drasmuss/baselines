@@ -3,10 +3,8 @@ import tempfile
 
 import tensorflow as tf
 import zipfile
-import cloudpickle
 import numpy as np
 
-import gym
 import baselines.common.tf_util as U
 from baselines import logger
 from baselines.common.schedules import LinearSchedule

@@ -6,7 +6,6 @@ import json
 import time
 import datetime
 import tempfile
-from mpi4py import MPI
 
 LOG_OUTPUT_FORMATS = ['stdout', 'log', 'csv']
 # Also valid: json, tensorboard
